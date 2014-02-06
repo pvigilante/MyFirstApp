@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery Mobile Test</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+</head>
+
+<body>
+<!-- Home Page -->
+<div data-role="page" id="home" >
+	<header data-role="header">
+    	<h1>Page Title</h1>
+    </header>
+    <div data-role="content">
+    	<p>Some Content</p>
+        <ul data-role="listview" data-inset="true" data-filter="true">
+        	<li><a href="#">Item 1</a></li>
+            <li data-role="list-divider">Divider</li>
+            <li><a href="">Cars</a>
+            	<ul>
+                	<li>Item 5</li>
+                    <li>Item 6</li>
+                    <li>Item 7</li>
+                    <li>Item 8</li>
+                </ul>
+            
+            </li>
+            <li><a href="#">Item 3</a></li>
+            <li><a href="#">Item 4</a></li>
+        </ul>
+        
+        <hr>
+        
+        <div data-role="collapsible-set">
+        	<div data-role="collapsible">
+                <h2>Some Items</h2>
+                <p>Stuff</p>
+            </div>
+            <div data-role="collapsible">
+                <h2>Some Items</h2>
+                <p>Stuff</p>
+            </div>
+        </div>
+        <div data-role="collapsible">
+        	<h2>Some Items</h2>
+            <p>Stuff</p>
+        </div>
+    </div>
+    <footer data-role="footer" data-position="fixed">
+    	<h4>Footer</h4>
+    </footer>
+</div>
+
+</body>
+</html>

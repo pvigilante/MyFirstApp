@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery Mobile Test</title>
+
+
+<link href="themes/fusha.css" rel="stylesheet">
+<link href="themes/jquery.mobile.icons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile.structure-1.4.0.min.css" /> 
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+</head>
+
+<body>
+<!-- Home Page -->
+<div data-role="page" id="home">
+	<header data-role="header">
+    	<h1>Page Title</h1>
+    </header>
+    <div data-role="content">
+    	<h1>The Home</h1>
+        <p>Home Page</p>
+        
+        <a href="#about" data-transition="slide">About Page</a><br>
+        <a href="#contact" data-transition="slideup">Contact</a><br>
+        <a href="#dialogbox" data-rel="dialog" data-transition="slideup">Open Dialog</a><br>
+		<a href="index.html" data-rel="external">First Index</a><br>
+	<a href="#popup" data-rel="popup" 
+    data-position-to="window">Pop</a>
+        
+        <!-- POP UP -->
+        
+        <div data-role="popup" id="popup">
+        	<p>Hello World</p>
+        </div>
+        
+        
+    </div>
+    <footer data-role="footer" data-position="fixed">
+    	<h4>Footer</h4>
+    </footer>
+</div>
+
+
+
+<!-- About Page -->
+<div data-role="page" id="about" data-theme="b">
+	<header data-role="header">
+    	<h1>About Page</h1>
+    </header>
+    <div data-role="content">
+    	<p>About me</p>
+        
+        <a href="#" data-role="button">Click Me</a>
+        <a href="#" data-role="button" data-inline="true">Click Me</a>
+        <hr>
+        <a href="#" data-role="button" data-icon="mail">Click Me</a>
+        <button data-icon="check" data-iconpos="top" data-theme="c">Real Button</button>
+        <input type="submit" value="Submit">
+        
+        <div class="ui-grid-b">
+        	<div class="ui-block-a">
+        		 <button data-icon="check" data-iconpos="top" data-theme="c">Real Button</button>
+            </div>
+            <div class="ui-block-b">
+        		 <button >Real Button</button>
+            </div>
+            <div class="ui-block-c">
+        		 <button data-icon="check" data-iconpos="top" data-theme="c">Real Button</button>
+            </div>
+        </div>
+        
+        <div class="ui-grid-a">
+        	<div class="ui-block-a">
+        		<input type="submit" value="Submit">
+            </div>
+            <div class="ui-block-b">
+        		<input type="submit" value="Submit">
+            </div>
+            <div class="ui-block-a">
+        		<input type="submit" value="Submit">
+            </div>
+            <div class="ui-block-b">
+        		<input type="submit" value="Submit">
+            </div>
+        </div>
+
+        
+    </div>
+    <footer data-role="footer" data-position="fixed" data-theme="c">
+    	<h4>About Footer</h4>
+    </footer>
+</div>
+
+
+<!-- Contact Page -->
+<div data-role="page" id="contact">
+	<header data-role="header">
+    	<h1>Contact Page</h1>
+    </header>
+    <div data-role="content">
+    	<p>Contact</p>
+    </div>
+    <footer data-role="footer" data-position="fixed">
+    	<h4>About Footer</h4>
+    </footer>
+</div>
+
+
+
+<!-- POP UP DIALOG-->
+<div data-role="page" id="dialogbox">
+	<header data-role="header">
+    	<h1>Dialog Page</h1>
+    </header>
+    <div data-role="content">
+    	<p>A message</p>
+    </div>
+    <footer data-role="footer" data-position="fixed">
+    	<h4>a Footer</h4>
+    </footer>
+</div>
+
+</body>
+</html>
